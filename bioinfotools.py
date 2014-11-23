@@ -1,18 +1,16 @@
 #!/usr/bin/python
 
 # This program was created by Cedric Lood as part of an assignment
-# for the Practical computing for bioinformatics at KU Leuven (Fall 2014)
-
-import itertools
+# for the Practical computing for bioinformatics (Fall 2014)
 
 def relative_nucleotides_freq(seq):
-    a = seq.count('A')
-    c = seq.count('C')
-    g = seq.count('G')
-    t = seq.count('T')
+    A = seq.count('A')
+    C = seq.count('C')
+    G = seq.count('G')
+    T = seq.count('T')
     seq_len = float(len(seq))
 
-    return 100*(a/seq_len), 100*(c/seq_len), 100*(g/seq_len), 100*(t/seq_len)
+    return 100*(A/seq_len), 100*(C/seq_len), 100*(G/seq_len), 100*(T/seq_len)
 
 def melting_temperature_basic(seq):
     return 4*(seq.count('G') + seq.count('C')) + 2*(seq.count('A') + seq.count('T'))
@@ -35,7 +33,7 @@ def count_codon(codon, seq):
         
 
 seq1 = 'ACTAATGCCT'
-seq2 = 'ATGAGTGAACGTCTGAGCATTACCCCGCTGGGG'
+seq2 = 'ATGAGTGAACGTCTGAGCATTACCCCGCTGGGGCCGTATATCGGCGCACAATAA'
 a, c, g, t = relative_nucleotides_freq('ACTAATGCCT')
 
 print "Relative frequencies of 'A': " + str(a)
