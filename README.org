@@ -1,7 +1,7 @@
 * BioToolbox
 
-Couple of functions developed for the class of Practical computing for
-Bioinformatics (Fall 2014)
+Short program developed for the class of "Practical computing for
+Bioinformatics" (Fall 2014)
 
 The script consists of a series of functions along with an
 illustration of their usage.
