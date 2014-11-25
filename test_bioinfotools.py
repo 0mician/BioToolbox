@@ -1,11 +1,11 @@
 #!/usr/bin/python
 # encoding: utf-8
 
+# This program was created by Cedric L. and is part of an assignment
+# for the Practical computing for bioinformatics (Fall 2014)
+
 from bioinfotools import *
 import pytest
-
-# This program was created by Cedric Lood as part of an assignment
-# for the Practical computing for bioinformatics (Fall 2014)
 
 def test_relative_nucleotides_freq():
     A, C, G, T = relative_nucleotides_freq("AAAAACCCCCTTTTTGGGGG")
